@@ -52,7 +52,7 @@ export const PlayerCard = ({
 
   return (
     <Box
-      w={{ base: "100%", md: "100%", lg: "493px" }}
+      w={{ base: "493px", md: "493px", lg: "493px" }}
       h={{ base: "137.35px", md: "137.35px", lg: "137.35px" }}
       display="flex"
       flexDir="row"
