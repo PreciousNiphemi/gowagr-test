@@ -30,6 +30,7 @@ export const StreetCards = ({
             bg="#FFFFFF"
             display="flex"
             gap={"13.26px"}
+            p={{ base: "10px", lg: "18px" }}
             bgGradient="to-r"
             gradientFrom="#232D39"
             gradientTo="#000000"
@@ -39,10 +40,18 @@ export const StreetCards = ({
             position="relative"
             overflow="hidden"
           >
-            <Image src="/numerous-options.svg" alt="Numerous Options" />
+            <Flex justifyContent="center" alignItems="center" w="100%">
+              <Image
+                src="/numerous-options.svg"
+                alt="Numerous Options"
+                w="105.5px"
+                h="132.74px"
+              />
+            </Flex>
+
             <Text
               color="#D0F091"
-              fontSize="10.32px"
+              fontSize="17.69px"
               fontWeight={800}
               fontFamily="eudoxus"
             >
@@ -73,10 +82,39 @@ export const StreetCards = ({
             gradientTo="#28A981"
             flexDirection="column"
             // justifyContent="end"
+            p={{ base: "10px", lg: "18px" }}
             borderRadius="18.42px"
             position="relative"
             overflow="hidden"
-          ></Box>
+          >
+            <Flex justifyContent="center" alignItems="center" w="100%">
+              <Image
+                src="/instant-cashout.svg"
+                alt="Instant Cashout"
+                w="105.5px"
+                h="105.5px"
+              />
+            </Flex>
+
+            <Text
+              color="#D0F091"
+              fontSize="17.69px"
+              fontWeight={800}
+              fontFamily="eudoxus"
+            >
+              Instant Cashout
+            </Text>
+            <Text
+              color="#D2D4D7"
+              fontSize="10.32px"
+              fontWeight={400}
+              fontFamily="eudoxus"
+            >
+              Say goodbye to waiting! With Squads, you can cash out your funds
+              instantly—any time, any day. Whether it's a weekend or midnight,
+              your money is just a tap away. 🚀
+            </Text>
+          </Box>
         );
 
       case "fast-deposits":
@@ -84,17 +122,44 @@ export const StreetCards = ({
           <Box
             width={{ base: "251.12px", lg: "251.12px" }}
             height={{ base: "289.74px", lg: "289.74px" }}
+            bg="#FFFFFF"
             display="flex"
             gap={"13.26px"}
-            bgGradient="to-b"
-            gradientFrom="#FFC2F7"
-            gradientTo="#FFFBFD"
             flexDirection="column"
             // justifyContent="end"
+            p={{ base: "10px", lg: "18px" }}
             borderRadius="18.42px"
             position="relative"
             overflow="hidden"
-          ></Box>
+          >
+            <Flex justifyContent="center" alignItems="center" w="100%">
+              <Image
+                src="/fast-deposits.svg"
+                alt="Fast deposits"
+                w="105.5px"
+                h="105.5px"
+              />
+            </Flex>
+
+            <Text
+              color="#20262E"
+              fontSize="17.69px"
+              fontWeight={800}
+              fontFamily="eudoxus"
+            >
+              Fast Deposit
+            </Text>
+            <Text
+              color="#353E49"
+              fontSize="10.32px"
+              fontWeight={400}
+              fontFamily="eudoxus"
+            >
+              Don’t let slow transactions hold you back. With Squads, you can
+              deposit funds instantly and stay in the game. Your winning streak
+              starts here!"🚀
+            </Text>
+          </Box>
         );
 
       case "bonus-rewards":
@@ -105,24 +170,43 @@ export const StreetCards = ({
             bg="#FFFFFF"
             display="flex"
             gap={"13.26px"}
+            bgGradient="to-b"
+            gradientFrom="#FFC2F7"
+            gradientTo="#FFFBFD"
             flexDirection="column"
             // justifyContent="end"
+            p={{ base: "10px", lg: "18px" }}
             borderRadius="18.42px"
             position="relative"
             overflow="hidden"
           >
-            {/* Confetti decoration */}
-            <Image
-              src="/confetti.svg"
-              alt="Confetti decoration"
-              position="absolute"
-              top="-5px"
-              right="0"
-              width="100%"
-              height="auto"
-              opacity={0.8}
-              zIndex={1}
-            />
+            <Flex justifyContent="center" alignItems="center" w="100%">
+              <Image
+                src="/bonuses.svg"
+                alt="Bonus Rewards"
+                w="105.5px"
+                h="105.5px"
+              />
+            </Flex>
+
+            <Text
+              color="#1A222C"
+              fontSize="17.69px"
+              fontWeight={800}
+              fontFamily="eudoxus"
+            >
+              Bonuses & Rewards
+            </Text>
+            <Text
+              color="#353E49"
+              fontSize="10.32px"
+              fontWeight={400}
+              fontFamily="eudoxus"
+            >
+              Don’t let slow transactions hold you back. With Squads, you can
+              deposit funds instantly and stay in the game. Your winning streak
+              starts here!"🚀
+            </Text>
           </Box>
         );
 
