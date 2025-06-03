@@ -156,18 +156,7 @@ export const Footer = () => {
         >
           {/* Logo */}
           <HStack gap={2}>
-            <Image src="/squads-logo.svg" alt="Squads" height="32px" />
-            <Box
-              bg="#6B73FF"
-              px={2}
-              py={1}
-              borderRadius="full"
-              fontSize="xs"
-              fontWeight={600}
-              color="white"
-            >
-              Beta
-            </Box>
+            <Image src="/squad-footer.svg" alt="Squads" height="32px" />
           </HStack>
 
           {/* Description */}
