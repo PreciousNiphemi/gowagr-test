@@ -16,7 +16,7 @@ export const HeroSection = () => {
       position="relative"
       minHeight="100vh"
       backgroundImage="url('/pattern-background-image.svg')"
-      backgroundColor="#2C3B4D"
+      backgroundColor="#151c24"
       backgroundSize="cover"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
