@@ -43,7 +43,7 @@ export const Footer = () => {
   ];
 
   return (
-    <Box bg="#1A222C" py={{ base: 8, lg: 12 }}>
+    <Box bg="#1A222C" py={{ base: 8, lg: 12 }} borderRadius="20px" mt={16}>
       <Container maxW="container.xl" px={{ base: 4, md: 8 }}>
         {/* Desktop Layout */}
         <Flex
