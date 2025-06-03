@@ -524,7 +524,7 @@ export const Community = () => {
           </Box>
         </VStack>
 
-        <VStack>
+        <VStack mt={"8rem"}>
           <Box
             display="flex"
             rounded={{ base: "18px", md: "20px", lg: "25px" }}
@@ -538,7 +538,44 @@ export const Community = () => {
             width="100%"
             minH={{ base: "auto", md: "auto", lg: "664px" }}
             bg="#232D39"
-          ></Box>
+            position="relative"
+            overflow="hidden"
+          >
+            {/* Main Title */}
+            <Box position="relative" zIndex={2}>
+              <Text
+                color="#D0F091"
+                fontFamily="gloria"
+                fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+              >
+                The streets{" "}
+              </Text>
+              <Text
+                color="#88C80C"
+                fontFamily="gloria"
+                fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+              >
+                f**k with{" "}
+              </Text>
+              <Text
+                color="#D0F091"
+                fontFamily="gloria"
+                fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+              >
+                Squads
+              </Text>
+            </Box>
+
+            {/* Street Images */}
+
+            {/* Sign Up Button */}
+
+            <Flex justifyContent="center" alignItems="center" w="100%">
+              <Button variant="primary" size="lg">
+                Sign Up on Squads
+              </Button>
+            </Flex>
+          </Box>
         </VStack>
 
         <Footer />
