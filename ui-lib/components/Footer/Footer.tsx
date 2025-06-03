@@ -55,18 +55,7 @@ export const Footer = () => {
           {/* Left Section - Logo and Description */}
           <VStack align="flex-start" gap={4} maxW="400px">
             <HStack gap={2}>
-              <Image src="/squads-logo.svg" alt="Squads" height="32px" />
-              <Box
-                bg="#6B73FF"
-                px={2}
-                py={1}
-                borderRadius="full"
-                fontSize="xs"
-                fontWeight={600}
-                color="white"
-              >
-                Beta
-              </Box>
+              <Image src="/squad-footer.svg" alt="Squads" height="32px" />
             </HStack>
 
             <Text
@@ -113,15 +102,12 @@ export const Footer = () => {
             <HStack gap={6} align="center">
               <HStack gap={4}>
                 {socialLinks.map((social) => (
-                  <Link key={social.alt} href={social.href} target="_blank">
-                    <Image
-                      src={social.icon}
-                      alt={social.alt}
-                      width="24px"
-                      height="24px"
-                      _hover={{ opacity: 0.8 }}
-                    />
-                  </Link>
+                  <Image
+                    src={social.icon}
+                    // alt={social.alt}
+
+                    _hover={{ opacity: 0.8 }}
+                  />
                 ))}
               </HStack>
 
