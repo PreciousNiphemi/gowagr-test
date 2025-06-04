@@ -167,6 +167,7 @@ export const Community = () => {
               w="100%"
               gap={4}
               flexDirection={{ base: "column", lg: "row" }}
+              alignItems={{ base: "center", lg: "start" }}
               justifyContent={{ base: "center", lg: "center" }}
             >
               {/* Step 1: Join Community */}
@@ -302,6 +303,7 @@ export const Community = () => {
               w="100%"
               gap={4}
               flexDirection={{ base: "column", lg: "row" }}
+              alignItems={{ base: "center", lg: "start" }}
               justifyContent={{ base: "center", lg: "center" }}
             >
               {/* Step 3: Fund Account */}
@@ -524,6 +526,7 @@ export const Community = () => {
           </Box>
         </VStack>
 
+        {/* Street fuck with squad section */}
         <VStack mt={"8rem"}>
           <Box
             display="flex"
@@ -536,45 +539,278 @@ export const Community = () => {
             alignItems={{ base: "center", lg: "flex-start" }}
             justifyContent="center"
             width="100%"
-            minH={{ base: "auto", md: "auto", lg: "664px" }}
-            bg="#232D39"
+            minH={{ base: "864px", md: "964px", lg: "664px" }}
+            bg="#171f29"
             position="relative"
             overflow="hidden"
           >
-            {/* Main Title */}
-            <Box position="relative" zIndex={2}>
-              <Text
-                color="#D0F091"
-                fontFamily="gloria"
-                fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+            <Flex
+              w="100%"
+              justifyContent="space-between"
+              display={{ base: "none", md: "none", lg: "flex" }}
+            >
+              <Box w="100%" flex={1}>
+                {/* Main Title */}
+                <Box position="relative" zIndex={2}>
+                  <Text
+                    color="#D0F091"
+                    fontFamily="gloria"
+                    fontSize={{ base: "53.93px", md: "53.93px", lg: "96px" }}
+                    textAlign="center"
+                  >
+                    The streets{" "}
+                  </Text>
+                  <Text
+                    mt={{ base: 0, md: 0, lg: "-2rem" }}
+                    color="#88C80C"
+                    fontFamily="gloria"
+                    textAlign="left"
+                    fontSize={{ base: "53.93px", md: "53.93px", lg: "96px" }}
+                  >
+                    f**k with{" "}
+                  </Text>
+                  <Text
+                    mt={{ base: 0, md: 0, lg: "-3rem" }}
+                    color="#D0F091"
+                    fontFamily="gloria"
+                    textAlign="right"
+                    fontSize={{ base: "53.93px", md: "53.93px", lg: "96px" }}
+                  >
+                    Squads
+                  </Text>
+                </Box>
+
+                <Box display="flex" position="relative">
+                  <Image
+                    src="/street-9.svg"
+                    alt="Street"
+                    rotate="-10.87deg"
+                    position="absolute"
+                    top="-10"
+                  />
+                  <Image
+                    src="/street-8.svg"
+                    alt="Street"
+                    rotate="10.24deg"
+                    position="absolute"
+                    left="20%"
+                    zIndex={2}
+                  />
+                </Box>
+              </Box>
+
+              {/* Street Images */}
+
+              {/* Sign Up Button */}
+              <Box
+                w="100%"
+                flex={1}
+                display="flex"
+                px={{ base: 4, md: 8, lg: 16 }}
+                justifyContent="flex-end"
               >
-                The streets{" "}
-              </Text>
-              <Text
-                color="#88C80C"
-                fontFamily="gloria"
-                fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+                <Flex
+                  justifyContent="center"
+                  w={{ base: "100%", md: "100%", lg: "50%" }}
+                  alignItems="center"
+                  minH={{ base: "100%", md: "100%", lg: "600px" }}
+                  position="relative"
+                >
+                  <Image
+                    src="/street-4.svg"
+                    alt="Street"
+                    rotate="-4.56deg"
+                    position="absolute"
+                    right="20%"
+                    bottom="0"
+                  />
+
+                  <Image
+                    src="/street-1.svg"
+                    alt="Street"
+                    rotate="9.32deg"
+                    position="absolute"
+                    right="0"
+                    bottom="0"
+                    zIndex={2}
+                  />
+                  <Box w="100%" minH="100%" />
+                  <Image
+                    src="/street-2.svg"
+                    alt="Street"
+                    rotate="18.91deg"
+                    position="absolute"
+                    right="-10%"
+                    bottom="0"
+                    zIndex={3}
+                  />
+                </Flex>
+              </Box>
+            </Flex>
+            <Box
+              w="100%"
+              flex={1}
+              display={{ base: "flex", md: "flex", lg: "none" }}
+              px={{ base: 4, md: 8, lg: 16 }}
+              justifyContent="flex-end"
+            >
+              <Flex
+                justifyContent="center"
+                w={{ base: "100%", md: "100%", lg: "50%" }}
+                alignItems="center"
+                minH={{ base: "100%", md: "100%", lg: "600px" }}
+                position="relative"
               >
-                f**k with{" "}
-              </Text>
-              <Text
-                color="#D0F091"
-                fontFamily="gloria"
-                fontSize={{ base: "53.93px", md: "", lg: "96px" }}
-              >
-                Squads
-              </Text>
+                <Image
+                  src="/street-4.svg"
+                  alt="Street"
+                  rotate="-4.56deg"
+                  position="absolute"
+                  left={{ base: "-20", md: "20" }}
+                  top="0"
+                  w={{ base: "165.18px", md: "195.18px", lg: "auto" }}
+                  h={{ base: "156px", md: "186px", lg: "auto" }}
+                />
+
+                <Image
+                  src="/street-1.svg"
+                  alt="Street"
+                  rotate="9.32deg"
+                  position="absolute"
+                  // right="0"
+                  top="0"
+                  zIndex={2}
+                  w={{ base: "171.06px", md: "191.06px", lg: "auto" }}
+                  h={{ base: "186.92px", md: "216.92px", lg: "auto" }}
+                />
+                <Box w="100%" minH="100%" />
+                <Image
+                  w={{ base: "176.88px", md: "196.88px", lg: "auto" }}
+                  h={{ base: "186.92px", md: "216.92px", lg: "auto" }}
+                  src="/street-2.svg"
+                  alt="Street"
+                  rotate="18.91deg"
+                  position="absolute"
+                  right={{ base: "-20", md: "20" }}
+                  top="0"
+                  zIndex={3}
+                />
+              </Flex>
             </Box>
 
-            {/* Street Images */}
+            <Box
+              display={{ base: "flex", md: "flex", lg: "none" }}
+              flexDir="column"
+              gap={8}
+              position="relative"
+            >
+              <Image
+                src="/pathfinder.svg"
+                position="absolute"
+                bottom={{ base: "20" }}
+                left={{ base: "-50%" }}
+              />
+              <Box position="relative" zIndex={2}>
+                <Text
+                  color="#D0F091"
+                  fontFamily="gloria"
+                  fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+                  textAlign="center"
+                >
+                  The streets{" "}
+                </Text>
+                <Text
+                  mt={{ base: 0, md: 0, lg: "-2rem" }}
+                  color="#88C80C"
+                  fontFamily="gloria"
+                  textAlign="left"
+                  fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+                >
+                  f**k with{" "}
+                </Text>
+                <Text
+                  mt={{ base: 0, md: 0, lg: "-3rem" }}
+                  color="#D0F091"
+                  fontFamily="gloria"
+                  textAlign="right"
+                  fontSize={{ base: "53.93px", md: "", lg: "96px" }}
+                >
+                  Squads
+                </Text>
+              </Box>
+              <Flex
+                justifyContent="center"
+                alignItems="center"
+                w="100%"
+                display={{ base: "flex", md: "flex", lg: "none" }}
+              >
+                <Button variant="primary" size="lg">
+                  Sign Up on Squads
+                </Button>
+              </Flex>
+            </Box>
 
-            {/* Sign Up Button */}
-
-            <Flex justifyContent="center" alignItems="center" w="100%">
+            <Flex
+              justifyContent="center"
+              alignItems="center"
+              w="100%"
+              display={{ base: "none", md: "none", lg: "flex" }}
+            >
               <Button variant="primary" size="lg">
                 Sign Up on Squads
               </Button>
             </Flex>
+
+            <Box
+              w="100%"
+              flex={1}
+              display={{ base: "flex", md: "flex", lg: "none" }}
+              px={{ base: 4, md: 8, lg: 16 }}
+              justifyContent="flex-end"
+            >
+              <Flex
+                justifyContent="center"
+                w={{ base: "100%", md: "100%", lg: "50%" }}
+                alignItems="center"
+                minH={{ base: "100%", md: "100%", lg: "600px" }}
+                position="relative"
+              >
+                <Image
+                  src="/street-4.svg"
+                  alt="Street"
+                  rotate="-4.56deg"
+                  position="absolute"
+                  left={{ base: "-20", md: "20" }}
+                  bottom="0"
+                  w={{ base: "165.18px", md: "185.18px", lg: "auto" }}
+                  h={{ base: "156px", md: "176px", lg: "auto" }}
+                />
+
+                <Image
+                  src="/street-1.svg"
+                  alt="Street"
+                  rotate="9.32deg"
+                  position="absolute"
+                  // right="0"
+                  bottom="0"
+                  zIndex={2}
+                  w={{ base: "171.06px", md: "191.06px", lg: "auto" }}
+                  h={{ base: "186.92px", md: "216.92px", lg: "auto" }}
+                />
+                <Box w="100%" minH="100%" />
+                <Image
+                  w={{ base: "176.88px", md: "191.06px", lg: "auto" }}
+                  h={{ base: "186.92px", md: "216.92px", lg: "auto" }}
+                  src="/street-2.svg"
+                  alt="Street"
+                  rotate="18.91deg"
+                  position="absolute"
+                  right={{ base: "-20", md: "20" }}
+                  bottom="0"
+                  zIndex={3}
+                />
+              </Flex>
+            </Box>
           </Box>
         </VStack>
 
