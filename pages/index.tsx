@@ -5,6 +5,7 @@ import { StreetWords } from "@/features/StreetWords";
 import { Community } from "@/features/Community";
 import { WhyTheStreet } from "@/features/WhyTheStreet";
 import { PlayerProjection } from "@/features/PlayerProjection";
+import { Box } from "@chakra-ui/react";
 import { SportsTag } from "@/features/SportsTag";
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
       <HeroSection />
       <Win100xCash />
       <SportsTag />
-      <PlayerProjection />
 
+      <PlayerProjection />
       <WhyTheStreet />
       <StreetWords />
       <JoinAnEcosystem />

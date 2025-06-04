@@ -48,7 +48,6 @@ export const SportsTag = () => {
       w="100%"
       bg="#12DD27"
       h={{ base: "auto", md: "100px", lg: "100px" }}
-      clipPath="polygon(0 0, 100% 0, 100% 100%, 0 70%)"
       overflow="hidden"
       position="relative"
       display="flex"

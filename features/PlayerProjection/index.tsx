@@ -97,14 +97,13 @@ export const PlayerProjection = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
-      clipPath="polygon(0 0, 100% 30%, 100% 100%, 0 100%)"
+      //   clipPath="polygon(0 0, 100% 30%, 100% 100%, 0 100%)"
       mt="-30px"
     >
       <Container
         maxW="container.xl"
         px={{ base: 4, md: 8, lg: 8 }}
         ref={containerRef}
-        // transform="skewY(-2deg)"
         w="100%"
       >
         <Flex justifyContent="flex-start" alignItems="center" mb={8}>
