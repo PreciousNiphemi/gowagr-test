@@ -56,7 +56,7 @@ export const PlayerProjection = () => {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://api.squads.game/bet/public-props?marketType=player_shots_on_target&size=30`
+        `/api/players?marketType=player_shots_on_target&size=30`
       );
       const data = await response.json();
       setPlayers(data.props);
@@ -97,11 +97,15 @@ export const PlayerProjection = () => {
       display="flex"
       flexDirection="column"
       alignItems="center"
+      clipPath="polygon(0 0, 100% 30%, 100% 100%, 0 100%)"
+      mt="-30px"
     >
       <Container
         maxW="container.xl"
         px={{ base: 4, md: 8, lg: 8 }}
         ref={containerRef}
+        // transform="skewY(-2deg)"
+        w="100%"
       >
         <Flex justifyContent="flex-start" alignItems="center" mb={8}>
           <Box maxW={{ base: "365px", md: "365px", lg: "638px" }}>
